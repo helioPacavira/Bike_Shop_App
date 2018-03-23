@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Bike_Shop</string>
+    <string name="delete">delete</string>
+    <string name="update">update</string>
+</resources>

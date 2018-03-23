@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:background="@drawable/store_background">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentStart="true"
+        android:id="@+id/bike">
+
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                app:srcCompat="@drawable/telephone"
+                android:layout_marginBottom="79dp"
+                android:id="@+id/imageView4"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:text="Bike Shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/storeName"
+                android:textSize="15sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="12dp"
+                android:textColor="@android:color/black"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                app:srcCompat="@drawable/place"
+                android:layout_marginTop="29dp"
+                android:id="@+id/imageView3"
+                android:layout_alignTop="@+id/imageView4"
+                android:layout_alignParentStart="false" />
+
+            <TextView
+                android:text="TELEPHONE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/store_address"
+                android:layout_alignTop="@+id/imageView4"
+                android:layout_toEndOf="@+id/imageView4"
+                android:layout_marginStart="15dp" />
+
+            <TextView
+                android:text="ADDRESS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/store_telephone"
+                android:layout_alignTop="@+id/imageView3"
+                android:layout_alignStart="@+id/store_address" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:background="@drawable/bicycle"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:text="About The Store"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView9"
+        android:textSize="27sp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:padding="2dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/white"
+        android:id="@+id/main"
+        android:layout_below="@+id/bike"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="21dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/holo_orange_dark"
+            android:id="@+id/info">
+
+
+            <TextView
+                android:text="Services Offered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:id="@+id/textView7"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="170dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:fillViewport="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:id="@+id/store_services" />
+
+    </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
